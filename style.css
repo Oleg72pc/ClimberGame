@@ -1,0 +1,205 @@
+ body {
+   margin: 0;
+ }
+
+ #container {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(to bottom, #04658F 0%, #289CE8 67%, #6E8F47 100%);
+ }
+
+ #mountains {
+   height: 400px;
+   width: 1000px;
+   position: relative;
+ }
+
+ #climber {
+   height: 90px;
+   width: 40px;
+ }
+
+ .climber {
+   position: absolute;
+   bottom: -90px;
+ }
+
+ #nested {
+   display: flex;
+   flex-direction: column;
+   border: 5px solid #0037ff;
+   position: relative;
+   background-image: url(./img/background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100%;
+ }
+
+ #header {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 15px;
+   padding: 5px;
+   color: #0037ff;
+   font-weight: bold;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   border: 3px solid #0037ff;
+   background-color: white;
+ }
+
+ #mountainsArea {
+   position: relative;
+   margin-top: 130px;
+ }
+
+ .point {
+   position: absolute;
+   color: brown;
+   font-weight: bold;
+   font-size: xx-large;
+ }
+
+ .flag {
+   position: absolute;
+   bottom: 415px;
+   left: 685px;
+ }
+
+ #flag {
+   height: 80px;
+   width: 80px;
+   opacity: 0;
+
+ }
+
+ #keydown {
+   text-align: center;
+   color: #0037ff;
+   font-weight: bold;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   border: 3px solid #0037ff;
+   background-color: white;
+ }
+
+ #nameIn,
+ #score {
+   display: flex;
+ }
+
+ #nameOut,
+ #scoreInPlay {
+   margin-left: 5px;
+ }
+
+ #point0 {
+   bottom: 45px;
+   left: 66px;
+ }
+
+ #point1 {
+   bottom: 106px;
+   left: 121px;
+ }
+
+ #point2 {
+   bottom: 199px;
+   left: 186px;
+ }
+
+ #point3 {
+   bottom: 269px;
+   left: 258px;
+ }
+
+ #point4 {
+   bottom: 307px;
+   left: 360px;
+ }
+
+ #point5 {
+   bottom: 373px;
+   left: 412px;
+ }
+
+ #point6 {
+   bottom: 294px;
+   left: 485px;
+ }
+
+ #point7 {
+   bottom: 228px;
+   left: 589px;
+ }
+
+ #point8 {
+   bottom: 302px;
+   left: 683px;
+ }
+
+ #point9 {
+   bottom: 389px;
+   left: 728px;
+ }
+
+ .snowContainer {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 0;
+ }
+
+ #snow {
+   width: 100%;
+   height: 100%;
+   background-image: url("https://yraaa.ru/_pu/27/15825154.png"), url("https://yraaa.ru/_pu/27/89961317.png"), url("https://yraaa.ru/_pu/27/21791255.png");
+   -webkit-animation: snow 20s linear infinite;
+   -moz-animation: snow 20s linear infinite;
+   -ms-animation: snow 20s linear infinite;
+   animation: snow 20s linear infinite;
+ }
+
+ @keyframes snow {
+   0% {
+     background-position: 0px 0px, 0px 0px, 0px 0px;
+   }
+
+   100% {
+     background-position: 500px 1000px, 400px 400px, 300px 300px;
+   }
+ }
+
+ @-moz-keyframes snow {
+   0% {
+     background-position: 0px 0px, 0px 0px, 0px 0px;
+   }
+
+   100% {
+     background-position: 500px 1000px, 400px 400px, 300px 300px;
+   }
+ }
+
+ @-webkit-keyframes snow {
+   0% {
+     background-position: 0px 0px, 0px 0px, 0px 0px;
+   }
+
+   100% {
+     background-position: 500px 1000px, 400px 400px, 300px 300px;
+   }
+ }
+
+ @-ms-keyframes snow {
+   0% {
+     background-position: 0px 0px, 0px 0px, 0px 0px;
+   }
+
+   100% {
+     background-position: 500px 1000px, 400px 400px, 300px 300px;
+   }
+ }
